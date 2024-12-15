@@ -1,3 +1,5 @@
+//prueba
+
 function App(){
   return(
     <div>
@@ -6,6 +8,7 @@ function App(){
         async()=>{ 
           const res = await fetch('http://localhost:3000/ping')}
           }>Fetch</button>
+          
     </div>
   )
 }
