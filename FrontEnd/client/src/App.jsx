@@ -4,7 +4,8 @@ function App(){
       <h1>Click para enviar peticion</h1>
       <button onClick={async()=>{
         const res = await fetch('http://localhost:3000/ping')
-        console.log(res)
+        const data = await res.text();
+        console.log(data)
       }}>Fecth</button>  
     </div>
   )
